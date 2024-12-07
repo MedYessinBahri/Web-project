@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur Lionel Messi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="temoignage.html">Témoignage IIT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="quiz-container">
+        <div id="quiz">
+            <h2>Quiz sur Lionel Messi</h2>
+            <p id="question"></p>
+            <div id="answers">
+                <button class="quiz-answer">Proposition 1</button>
+                <button class="quiz-answer">Proposition 2</button>
+                <button class="quiz-answer">Proposition 3</button>
+            </div>
+        </div>
+
+        <div id="result" style="display: none;">
+            <h3>Votre résultat : <span id="score">0</span>/10</h3>
+            <p id="feedback"></p>
+        </div>
+    </div>
+
+    <script src="css/quiz.js"></script>
+</body>
+</html>

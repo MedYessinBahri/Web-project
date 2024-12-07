@@ -1,0 +1,663 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #dcdcdc; /* Arrière-plan gris */
+}
+
+/* Header navigation */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    color: #ffcc00;
+    border-radius: 5px;
+}
+
+/* Section À propos de moi */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px; /* Coins arrondis pour la section */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #333;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Liens sociaux */
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start; /* Aligner à gauche */
+    gap: 15px; /* Espace entre les icônes */
+    margin-left: 150px; /* Décalage vers la gauche */
+}
+
+.social-links a img {
+    width: 40px; /* Taille des icônes */
+    height: 40px;
+    border-radius: 50%; /* Rendre les icônes rondes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+}
+
+/* Liens dans la section "À propos de moi" */
+.about-text a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-text a:hover {
+    text-decoration: underline;
+}
+/*PARCOUES-----------------------------------------------------------------------------------*/
+/* Section Parcours */
+.parcours {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px; /* Coins arrondis pour la section */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrer le texte et les images */
+}
+
+/* Titre de la section Parcours */
+.parcours h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Liste des diplômes */
+.parcours ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Chaque élément de la liste */
+.parcours ul li {
+    font-size: 1.1rem;
+    margin-bottom: 30px; /* Ajouter de l'espace entre les diplômes */
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer le texte et l'image */
+}
+
+/* Mise en valeur des titres des diplômes */
+.parcours ul li strong {
+    color: #333;
+    margin-bottom: 10px; /* Espacement entre le titre et l'image */
+}
+
+/* Images des diplômes */
+.diplome-image {
+    width: 200px; /* Augmenter la taille des images */
+    height: 200px; /* Hauteur de l'image */
+    border-radius: 10px; /* Coins arrondis pour les images */
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Effet au survol des images */
+.diplome-image:hover {
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+}
+
+/* Liens dans la section Parcours */
+.parcours a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.parcours a:hover {
+    text-decoration: underline;
+}
+/*conpetance------------------------------------*/
+/* Section des compétences */
+.section-competences {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-competences h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Conteneur pour chaque compétence */
+.competence-item {
+    display: inline-block;
+    width: 150px;
+    margin: 20px;
+    text-align: center;
+}
+
+.competence-item-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;  /* Assurer que l'image est entièrement visible sans découpe */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.competence-item p {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+/*contact------------*/
+/* Conteneur du formulaire */
+.form-container {
+    background-color: #fff; /* Fond blanc */
+    padding: 30px; /* Espacement interne */
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    width: 100%;
+    max-width: 600px; /* Limite la largeur maximale */
+    margin: 40px auto; /* Centré avec de l'espace au-dessus et en dessous */
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Groupes de champs */
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Étiquettes des champs */
+.form-group label {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Champs de saisie */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Area de texte */
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Bouton d'envoi */
+.submit-btn {
+    padding: 10px ;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+
+}
+
+/* Effet de survol du bouton */
+.submit-btn:hover {
+    background-color: #555;
+}
+/*quiz---------------------------------------------*/
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+}
+
+/* Container du quiz */
+#quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre du quiz */
+#quiz h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Question */
+#question {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Boutons de réponse */
+.quiz-answer {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.quiz-answer:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Container des résultats */
+#result {
+    display: none;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Résultats du quiz */
+#result h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+#score {
+    font-size: 2rem;
+    color: #007BFF;
+}
+
+#feedback {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Section des expériences -------------------------------------*/
+.experiences {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.experience-header h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.experience-header p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Conteneur des expériences */
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Chaque expérience */
+.experience-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Image de l'expérience */
+.experience-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Texte de l'expérience */
+.experience-text {
+    text-align: left;
+    flex: 1;
+}
+
+.experience-text h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.experience-text p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.experience-text ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.experience-text ul li {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience-text {
+        text-align: center;
+    }
+}
+/*passion--------------------------------------*/
+/* Section des passions */
+.passions {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.passions h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Conteneur des passions */
+.passion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.passion:last-child {
+    border-bottom: none;
+}
+
+/* Images des passions */
+.passion img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.passion img:hover {
+    transform: scale(1.1);
+}
+
+/* Titres des passions */
+.passion h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+/* Paragraphes des passions */
+.passion p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+/*temoi-----------------------------------*/
+/* Style global */
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header navigation */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    color: #ffcc00;
+    border-radius: 5px;
+}
+
+/* Section Témoignage */
+.temoignage {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.temoignage h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Conteneur des témoignages */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content:last-child {
+    border-bottom: none;
+}
+
+/* Images des témoignages */
+.content img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+}
+
+/* Titres des témoignages */
+.content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+/* Paragraphes des témoignages */
+.content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
